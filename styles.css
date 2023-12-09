@@ -1,0 +1,139 @@
+/*Matching Pallete 
+
+
+#EADBEA
+#B8AAB8
+#897B89
+#5C505D
+#332834
+
+--------------------------------------*/
+@font-face { font-family: OvertheRainbow; src: url("OvertheRainbow-Regular.ttf"); }
+
+/*Global styles --------------------------------------*/
+body {color:#140014; background-color: #d7e5ff; 
+    margin: 0 -500%;
+    padding: 0 500%
+}
+
+footer {color:#140014; background-color: #FFF7FF;
+    margin: 0 -500%; padding: 0 500%
+}
+
+
+h3+p{font-style: italic;}
+
+
+/*Links --------------------------------------*/
+a {
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, black, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: auto;
+}
+
+a:hover {
+  color: transparent;
+  transition: 500ms ease;
+}
+  
+  /* selected link */
+  a:active {
+    color:white;
+  }
+
+/*Headings --------------------------------------*/
+
+h1 {
+    font-family: "OvertheRainbow";
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+  }
+  
+  body {
+    background-color: lightgrey;
+  }
+h2 {text-align: center;font-family: Georgia, Times, Times New Roman, serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }  
+    h3 { text-align: center; font-family: Georgia, Times, Times New Roman, serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 20px; } 
+    ul {
+        display: inline-block; 
+        text-align: left; font-family: Georgia, Times, "Times New Roman", serif;font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 150%;}
+    p { margin: 0.5in;
+        text-align: center;
+        font-family: Georgia, Times, Times New Roman, serif font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 150%; } 
+    blockquote { font-family: Georgia, Times, "Times New Roman", serif;font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 150%; } 
+    pre { font-family: Georgia, Times, "Times New Roman", serif;font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 150%;}
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .justified {text-align: justify; text-indent: 0.5in;margin: 0.5in; max-width: 900px; width:85%; margin:0 auto;
+
+      }
+      body {
+        display: grid;
+        grid-template-columns: auto 0px; 
+      }
+      
+      .top {
+        --offset: 50px; 
+      
+        position: sticky;
+        bottom: 20px;      
+        margin-right: 10px; 
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));
+      
+        /* visual styling */
+        width: 45px;
+        aspect-ratio: 1;
+        background: black;
+        border-radius: 10px;
+      }
+      
+      .top:before {
+        content: "";
+        position: absolute;
+        inset: 30%;
+        transform: translateY(20%) rotate(-45deg);
+      }
+      
+      p {
+        font-size: 25px;}
+     button {font-family: Georgia, Times, "Times New Roman", serif;font-size:18px;padding:8px;border-radius: 4px;
+          background-color: black;color:white;cursor: pointer;width:50%;height:100%}
+
+    #scrollToTopBtn {
+            background-color: black;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 30px;
+            width: 30px;
+          }
+
+/* media inqueries
+@media screen and (min-width:1015px) {}*/
+@media screen and (min-width:850px) {.image_GC img {float:left; margin:10px;}}
+@media screen and (min-width:1040px) {.education_section {background-image: url(background.png);background-size: cover;max-width: 900px;background-position:bottom right;}}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Mapping Queer-Friendly Milwaukee</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="background-image: url('https://64.media.tumblr.com/be08b4534607b0cee68957ccb99ff2ab/tumblr_otgj5n61xI1udszxdo1_500.png');background-repeat:no-repeat;background-attachment:fixed;background-size: 100% 100%;">
+    <main>
+      <header>
+        <script>  
+        var imgStatus ="pic1";
+      function imagechange() {
+        if(imgStatus=="pic1") {
+            document.getElementById("pic1").src = "me_me_me.png";
+            document.getElementById("para1").innerHTML = "This is Izzy Veta - an academy-bound biromantic versatile artist. <br> She is getting a Ph.D. in Sociology and a certificate in GIS. She is a poet, a songwriter and an amateur candlemaker. <br> Please click on the photo again if you want to go back:)";
+            document.getElementById("para1").style.textDecoration = "underline";
+            imgStatus="pic2";}
+        else {
+            document.getElementById("pic1").src="Queersome.png";
+            document.getElementById("para1").innerHTML="Thank you for learning more about the project creator💜";
+            document.getElementById("para1").style.textDecoration = "none";
+            imgStatus="pic1"; 
+        }
+      }
+      </script>
+      <div style="text-align: center;">
+        <h1>Mapping Queer-Friendly Milwaukee</h1>
+        <h2>Hello everyone! Thank you for expressing your interest in us mapping Queer-Friendly spaces in Milwaukee. </h2>
+        <div style="text-align: center;">
+          <button style="display: inline-block !important; width: 300px !important; background-color:black !important; font: size 18px !important;"><a href="#MQSM" style="display:block !important; color:white; padding:10px !important;">🌈Explore the Project🌈</a></button>
+          </div>
+        <h2 id="para1"> Please click on the picture below to learn more about the creator of the project⭐ </h2>
+        <img id="pic1" onclick="imagechange();" src="Queersome.png" alt="Queersome Experience inscription with rainbow flowers" width="500px">
+        </div>
+
+        <div class="container">
+          <iframe scrolling="no" id="MQSM" src="https://experience.arcgis.com/experience/c2a33f06a6a24f3797ade0638831bd99"></iframe>
+        <style>
+          .container {
+          position: sticky;
+          overflow: hidden;
+          padding-top: 56.25%;
+        }
+        .container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+        </style>
+          </div>
+          <button id="scrollToTopBtn">⇧</button>
+          <script>
+          var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            var rootElement = document.documentElement;
+            
+            function scrollToTop() {
+              // Scroll to top logic
+              rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              });
+            }
+            scrollToTopBtn.addEventListener("click", scrollToTop);
+            </script>
+        </header>
+    </main>
+  </body>
+</html>
